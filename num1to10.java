@@ -16,6 +16,14 @@ public class num1to10 {
 			System.out.println(i);
 			i++;
 		}
+		
+		// DO WHILE
+		int k = 1;
+		
+		do {
+			System.out.println(k);
+			k++;
+		}while(k <= 10);
 
 	}
 
