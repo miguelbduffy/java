@@ -33,6 +33,13 @@ public class counting_numbers {
 		// Ask the user if wants to input a new number	
 		System.out.print("Would you like to input another number?: y / n");
 			choice = in.next().charAt(0);
+		
+		// While the answer isn´t y or n, the user will be asked to enter a valid answer.
+		while(choice != 'y' && choice != 'Y' && choice != 'n' && choice != 'N') {
+		System.out.print("You must input y (for yes) / n (for no). Would you like to input another number? ");
+			choice = in.next().charAt(0);
+		}
+		
 		// While the user responds it will enter a new number, do continues working; otherwise, it will print the counters.
 		}while(choice == 'y' || choice == 'Y');
 		
